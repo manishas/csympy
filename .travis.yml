@@ -5,8 +5,7 @@ env:
   #### Out of tree builds (default):
   # Debug build:
   - BUILD_TYPE="Debug" WITH_BFD="yes" WITH_CSYMPY_RCP="yes"
-  # Debug build with CSYMPY_ASSERT on
- before_install:
+before_install:
   - sudo apt-get update
   - sudo apt-get install cmake libgmp-dev
   - if [[ "${WITH_BFD}" == "yes" ]]; then
