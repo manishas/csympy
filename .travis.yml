@@ -30,7 +30,6 @@ script:
         cd build;
         export SOURCE_DIR=..;
     fi
-
   - $SOURCE_DIR/bin/test_travis.sh
 notifications:
   email: false
